@@ -1,0 +1,68 @@
+[
+    {
+      "name": "Speedster 2000",
+      "brand": "Veloci",
+      "category": "Mountain Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-08-15",
+      "price": 1200,
+      "description": "A robust mountain bike designed for extreme terrains, featuring superior suspension and durable tires.",
+      "rating": 4.5,
+      "madeInCountry": "USA",
+      "madeInDate": "2023-05-10",
+      "condition": "New"
+    },
+    {
+      "name": "EcoRider X",
+      "brand": "GreenCycle",
+      "category": "Electric Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-08-10",
+      "price": 850,
+      "description": "An eco-friendly electric bike, perfect for city commutes with a long-lasting battery and a sleek design.",
+      "rating": 4.7,
+      "madeInCountry": "Germany",
+      "madeInDate": "2023-11-22",
+      "condition": "2nd hand"
+    },
+    {
+      "name": "Urban Commuter Pro",
+      "brand": "CityGear",
+      "category": "Road Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-08-05",
+      "price": 600,
+      "description": "Lightweight and fast, this road bike is built for urban commuting, offering agility and speed on city streets.",
+      "rating": 4.3,
+      "madeInCountry": "Japan",
+      "madeInDate": "2023-08-15",
+      "condition": "New"
+    },
+    {
+      "name": "TrailBlazer XT",
+      "brand": "OffRoaders",
+      "category": "Mountain Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-08-01",
+      "price": 950,
+      "description": "Built for the toughest trails, this mountain bike combines durability and performance with a rugged design.",
+      "rating": 4.6,
+      "madeInCountry": "Canada",
+      "madeInDate": "2023-06-18",
+      "condition": "2nd hand"
+    },
+    {
+      "name": "SpeedDemon V3",
+      "brand": "RapidRide",
+      "category": "Racing Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-07-25",
+      "price": 1300,
+      "description": "A high-performance racing bike designed for speed enthusiasts, featuring advanced aerodynamics and lightweight materials.",
+      "rating": 4.8,
+      "madeInCountry": "Italy",
+      "madeInDate": "2023-04-12",
+      "condition": "New"
+    }
+  ]
+  

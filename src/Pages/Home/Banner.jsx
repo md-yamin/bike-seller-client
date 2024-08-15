@@ -3,22 +3,25 @@
 const Banner = () => {
     return (
         <div        >
-            <div className="carousel w-full">
+            <div className="carousel w-full text-slate-200">
                 {
                     banners.map(banner => <div key={banner.id} id={`item${banner.id}`} className="carousel-item w-full">
                         <div
                             style={{
                                 backgroundImage: `url(${banner.background})`,
                             }}
-                            className="w-full h-[80vh] bg-yellow-300">
-                            <div className="flex items-center pt-[30vh] w-[80vw] mx-auto">
-                                <div className="mx-auto w-[40vw]">
-                                    <h1 className="text-4xl font-bold">{banner.header}</h1>
-                                    <p>{banner.description}</p>
-                                    <button className="btn w-fit">View Offer</button>
+                            className="w-full h-[80vh]">
+                            <div className="bg-black bg-opacity-40 w-full h-full">
+                                <div className="flex items-center pt-[30vh] w-[80vw] mx-auto">
+                                    <div className="mx-auto w-[40vw]">
+                                        <h1 className="text-4xl font-bold">{banner.heading}</h1>
+                                        <p>{banner.description}</p>
+                                        <button className="btn w-fit">View Offer</button>
+                                    </div>
+                                    <img className="w-[30vw]" src={banner.image} alt="" />
                                 </div>
-                                <img className="w-[30vw]" src={banner.image} alt="" />
                             </div>
+
                         </div>
                     </div>)
                 }

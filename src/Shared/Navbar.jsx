@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const [header, setHeader] = useState(false)
     const scrollHeader = () => {
-        if (window.scrollY >= 10) {
+        if (window.scrollY >= 40) {
             setHeader(true)
         } else {
             setHeader(false)
