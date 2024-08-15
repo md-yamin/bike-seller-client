@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const [header, setHeader] = useState(false)
     const scrollHeader = () => {
-        if (window.scrollY >= 40) {
+        if (window.scrollY >= 50) {
             setHeader(true)
         } else {
             setHeader(false)
@@ -26,7 +26,7 @@ const Navbar = () => {
         },
         {
             title: "Bikes",
-            path: "/bikes"
+            path: "/all-bikes"
         },
         {
             title: "Services",
@@ -50,8 +50,8 @@ const Navbar = () => {
             <div style={{
                 transition: 'width 0.5s ease',
             }}
-                className={`mx-auto ${header ? 'w-full bg-yellow-400' : 'w-[80vw] bg-slate-200'}`}>
-                <div className={`navbar w-[80vw] mx-auto py-[1.5vw] px-[2vw]`}>
+                className={`mx-auto ${header ? 'w-full bg-yellow-400' : 'w-[80vw] text-white bg-zinc-900'}`}>
+                <div className={`navbar w-[80vw] mx-auto px-[2vw]`}>
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,19 +72,19 @@ const Navbar = () => {
                                 tabIndex={0}
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-fit p-2 shadow z-10">
                                 {
-                                    navItems.map((item) => (<li href={item.path} key={item.path}><Link className='mb-2 hover:text-primary'>{item.title}</Link></li>))
+                                    navItems.map((item) => (<li key={item.path}><Link to={item.path} className='mb-2 hover:text-primary'>{item.title}</Link></li>))
 
                                 }
                             </ul>
                         </div>
-                        <Link href={'/'}>
+                        <Link to='/'>
                             <p>GearUp</p>
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
                             {
-                                navItems.map((item) => (<li href={item.path} key={item.path}><Link className='mr-5 hover:text-primary' >{item.title}</Link></li>))
+                                navItems.map((item) => (<li key={item.path}><Link to={item.path} className='mr-5 hover:text-primary' >{item.title}</Link></li>))
                             }
                         </ul>
                     </div>

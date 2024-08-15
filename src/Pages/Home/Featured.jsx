@@ -12,7 +12,7 @@ const Featured = () => {
                 {
                     bikes.map((bike, index) => <div key={index} className="card bg-base-300 shadow-xl image-full w-fit mb-10 h-full mx-auto relative">
                         <figure><img className="w-full" src={bike.image} alt="Shoes" /></figure>
-                        <div className="card-body">
+                        <div className="card-body p-5">
                             <div className="flex flex-col">
                                 <img className="rounded-lg" src={bike.image} alt="" />
                                 <div className="p-2">
