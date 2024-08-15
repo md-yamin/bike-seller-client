@@ -63,6 +63,20 @@
       "madeInCountry": "Italy",
       "madeInDate": "2023-04-12",
       "condition": "New"
+    },
+    {
+      "name": "Adventure Cruiser 500",
+      "brand": "Globetrotter",
+      "category": "Touring Bike",
+      "image": "https://i.ibb.co/NCfN8PX/bike.jpg",
+      "dateAdded": "2024-08-15",
+      "price": 1100,
+      "description": "Designed for long-distance journeys, this touring bike offers comfort and durability, making it perfect for exploring new horizons.",
+      "rating": 4.4,
+      "madeInCountry": "France",
+      "madeInDate": "2023-07-30",
+      "condition": "2nd hand"
     }
+    
   ]
   

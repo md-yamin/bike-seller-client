@@ -1,9 +1,9 @@
 
-const SectionTitle = () => {
+const SectionTitle = ({heading, subHeading}) => {
     return (
-        <div className="text-center">
-            <h2 className="font-serif italic text-[3vw]">--- Title ---</h2>
-            <h4>Check out our newest releases for your self and gear up for your next adventure.</h4>
+        <div className="text-center mb-[10vh] mt-[15vh]">
+            <h2 className="font-serif italic text-[3vw] text-[#000000]">{heading}</h2>
+            <h4 className="w-1/3 mx-auto">{subHeading}</h4>
         </div>
     );
 };

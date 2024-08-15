@@ -5,7 +5,9 @@ import SectionTitle from "../../Shared/SectionTitle";
 const Featured = () => {
     return (
         <div>
-            <SectionTitle/>
+            <SectionTitle
+            heading='Featured Gears'
+            subHeading="Check out our newest releases for your self and gear up for your next adventure."/>
             <div className="grid grid-cols-3 gap-5 w-4/5 mx-auto">
                 {
                     bikes.map((bike, index) => <div key={index} className="card bg-base-300 shadow-xl image-full w-fit mb-10 h-full mx-auto relative">
