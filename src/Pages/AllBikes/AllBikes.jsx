@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import bikes from "../../../public/bikes.json";
 
 const AllBikes = () => {
+
+    const brands = bikes.map(bike => bike.brand)
+    const categories = bikes.map(bike => bike.category)
+    console.log(brands);
+
+
     return (
         <div className="mt-36">
             <form className="w-1/2 mx-auto md:mb-10 relative">
@@ -20,12 +26,12 @@ const AllBikes = () => {
 
                         <div className="flex justify-between">
                             <div className="flex justify-center gap-2 items-center">
-                            <input type="radio" name="radio-1" className="radio" />
+                                <input value='low to high' type="radio" name="radio-1" className="radio" />
                                 <span>Low to High</span>
                             </div>
 
                             <div className="flex justify-center gap-2 items-center">
-                            <input type="radio" name="radio-1" className="radio" />
+                                <input value='high to low' type="radio" name="radio-1" className="radio" />
                                 <span>High to Low</span>
                             </div>
                         </div>
@@ -33,21 +39,30 @@ const AllBikes = () => {
 
                         {/* Brand filter */}
                         <div>
-                            <h4 className="font-medium">Brand:</h4>
-                            <div className="flex justify-center gap-2 items-center">
-                                <input type="checkbox" defaultChecked className="checkbox" />
-                                <span>Brand Name</span>
+                            <h4 className="font-medium mb-5">Brand:</h4>
+                            <div className="grid grid-cols-2 gap-y-3">
+                                {
+                                    categories.map((category, index) => <div key={index} className="flex  gap-2 items-center">
+                                        <input value='categoryName' type="checkbox" name="categoryName" className="checkbox" />
+                                        <span>{category}</span>
+                                    </div>)
+                                }
                             </div>
+
                         </div>
 
 
 
                         {/* Category filter */}
                         <div>
-                            <h4 className="font-medium">Category:</h4>
-                            <div className="flex justify-center gap-2 items-center">
-                                <input type="checkbox" defaultChecked className="checkbox" />
-                                <span>Brand Name</span>
+                            <h4 className="font-medium mb-5">Category:</h4>
+                            <div className="grid grid-cols-2 gap-y-3">
+                                {
+                                    brands.map((brand, index) => <div key={index} className="flex  gap-2 items-center">
+                                        <input value='brandName' type="checkbox" name="brandName" className="checkbox" />
+                                        <span>{brand}</span>
+                                    </div>)
+                                }
                             </div>
                         </div>
                         <input className="btn w-full bg-emerald-600" type="submit" value="Filter" />
