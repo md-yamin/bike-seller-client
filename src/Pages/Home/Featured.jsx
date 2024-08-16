@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import bikes from "../../../public/bikes.json"
 import SectionTitle from "../../Shared/SectionTitle";
+import useBikes from "../../hooks/useBikes";
 
 const Featured = () => {
+
+    const [,bikes] = useBikes()
+
     return (
         <div>
             <SectionTitle

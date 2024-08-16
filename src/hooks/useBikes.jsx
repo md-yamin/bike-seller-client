@@ -3,12 +3,12 @@ import { useQuery } from "@tanstack/react-query";
 
 
 
-const useBikes = () => {
+const useBikes = (prop) => {
     const axiosData = useAxiosData()
     const { refetch, data: bikes = [] } = useQuery({
-        queryKey: ['bike', ""],
+        queryKey: ['bike'],
         queryFn: async () => {
-            const res = await axiosData.get(`/bikes`)
+            const res = await axiosData.get(`/bikes?page=${prop}`)
             return res.data
         }
     })
