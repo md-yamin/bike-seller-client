@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import bikes from "../../../public/bikes.json";
+import useBikes from "../../hooks/useBikes";
+// import bikes from "../../../public/bikes.json";
 
 const AllBikes = () => {
 
+    const [,bikes] = useBikes()
     const brands = bikes.map(bike => bike.brand)
     const categories = bikes.map(bike => bike.category)
-    console.log(brands);
+    console.log(brands); 
 
 
     return (
@@ -70,8 +72,8 @@ const AllBikes = () => {
                 </aside>
                 <div className="grid grid-cols-3 gap-[2vw] w-4/5 mx-auto">
                     {
-                        bikes.map((bike, index) =>
-                            <div key={index} className="flex flex-col">
+                        bikes.map((bike) =>
+                            <div key={bike._id} className="flex flex-col">
                                 <img className="rounded-lg" src={bike.image} alt="" />
                                 <div className="p-2">
                                     <h2 className='text-2xl font-bold text-center mb-[1vw]'>{bike.name}</h2>
