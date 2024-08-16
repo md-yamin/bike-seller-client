@@ -9,14 +9,14 @@ const AllBikes = () => {
 
 
     return (
-        <div className="mt-36">
-            <form className="w-1/2 mx-auto md:mb-10 relative">
+        <form className="mt-36">
+            <div className="w-1/2 mx-auto md:mb-10 relative">
                 <input className="input input-bordered w-full mt-3 focus:ring focus:ring-opacity-75 dark:text-gray-50 focus:dark:ring-violet-600 dark:border-gray-300" type="search" name="search" id="" />
                 <input className="absolute top-3 right-0 px-7 btn bg-gray-900 text-white" type="submit" value="Search" />
-            </form>
+            </div>
             <div className="flex">
                 <aside className="w-[30vw] px-10">
-                    <form className="space-y-5" action="">
+                    <div className="space-y-5" action="">
                         <h4 className="font-medium">Price Range:</h4>
                         <div className="flex justify-center items-center space-x-2">
                             <input type="number" name="" id="" className="input input-bordered w-1/2" />
@@ -66,7 +66,7 @@ const AllBikes = () => {
                             </div>
                         </div>
                         <input className="btn w-full bg-emerald-600" type="submit" value="Filter" />
-                    </form>
+                    </div>
                 </aside>
                 <div className="grid grid-cols-3 gap-[2vw] w-4/5 mx-auto">
                     {
@@ -96,7 +96,7 @@ const AllBikes = () => {
 
                 </div>
             </div>
-        </div>
+        </form>
     );
 };
 
